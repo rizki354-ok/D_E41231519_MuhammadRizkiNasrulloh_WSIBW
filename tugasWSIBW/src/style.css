@@ -1,0 +1,14 @@
+body, footer, p{margin: 0;}
+*{font-family: "Inria Sans", sans-serif;}
+img{display: block;margin: auto;width: 200px;}
+h1, p{text-align: center;}
+form{width: 80%;margin: auto;min-width: 400px;}
+label{display: block;}
+legend{margin-left: 20px;}
+legend, label{font-weight: bold;margin-block: 10px;}
+input[type=radio]+label, input[type=checkbox]+label{display: unset;font-weight: unset;}
+input[type=radio], input[type=checkbox]{width: unset;height: unset;}
+fieldset{padding: 20px;margin-block: 40px;}
+input, textarea, select{width: calc(100% - 10px);height: 30px;}
+footer{background-color: rgb(0, 0, 0, 0.85);margin-top: 40px;padding-block: 20px; color: white;}
+input[type=submit]{display: block;margin-bottom: 20px;height: 35px;width: 90px;color: white;background-color: rgb(51, 190, 51);border: none;border-radius: 5px;}

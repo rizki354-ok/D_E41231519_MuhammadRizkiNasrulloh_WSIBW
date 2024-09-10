@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Mahasiswa</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="src/Polije.png" alt="Logo polije">
+    <h1>Form Pendaftaran</h1>
+    <p>Silahkan isi form secara lengkap</p>
+    <form action="data.php" method="POST">
+        <fieldset>
+            <legend>Informasi Primer</legend>
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" name="nama" id="nama" placeholder="Isikan nama lengkap anda disini!" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="msl: email@gmail.com" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Masukkan kata sandi minimal 8 karakter dengan kombinasi huruf dan angka" required>
+            <label for="asalkota">Asal Kota</label>
+            <select name="asalkota" id="asalkota">
+                <option value="malang">Malang</option>
+                <option value="jember" selected>Jember</option>
+                <option value="banyuwangi">Banyuwangi</option>
+            </select>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="laki-laki" value="laki-laki" checked>
+            <label for="laki-laki">Laki - laki</label>
+            <input type="radio" name="gender" id="perempuan" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+        </fieldset>
+        <fieldset>
+            <legend>Informasi Sekunder</legend>
+            <label for="alamat">Alamat</label>
+            <textarea name="alamat" id="alamat" placeholder="Isi alamat lengkap anda" style="height: 100px;" required></textarea>
+            <label for="kendaraan">Kendaraan</label>
+            <input type="checkbox" name="kendaraan" id="mobil">
+            <label for="mobil">Mobil</label>
+            <input type="checkbox" name="kendaraan" id="motor">
+            <label for="motor">Sepeda Motor</label>
+            <input type="checkbox" name="kendaraan" id="sepeda">
+            <label for="sepeda">Sepeda</label>
+            <label for="alamatwebsite">Alamat Website</label>
+            <input type="text" name="alamatwebsite" id="alamatwebsite" placeholder="msl: https://websitesaya.com" required>
+            <label for="tanggallahir">Tanggal Lahir</label>
+            <input type="datetime-local" name="tanggallahir" id="tanggallahir" required>
+            <label for="jumlahanak">Jumlah Anak</label>
+            <input type="number" name="jumlahanak" id="jumlahanak" min="0" value="0" required>
+            <label for="foto">Foto Anda<br>Upload Foto</label>
+            <input type="file" name="" id="" accept="image/jpeg, image/jpg, image/png" required>
+        </fieldset>
+        <input type="submit" value="Kirim">
+        <input type="checkbox" name="subcribeEmail" id="subcribeEmail">
+        <label for="subcribeEmail">Subcribe notifikasi ke email Anda (jika tidak, silahkan kosongi)</label>
+        <input type="checkbox" name="subcribeWeb" id="subcribeWeb">
+        <label for="subcribeWeb">Subcribe postingan dari website</label>
+    </form>
+    <footer>
+        <p>&copy; Mr. N - 2024</p>
+    </footer>
+</body>
+</html>
