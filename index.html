@@ -6,9 +6,7 @@
     <title>Redirect</title>
     <script>
         window.onload = function() {
-            var protocol = window.location.protocol;
-            var host = window.location.host;
-            var newUri = protocol + '//' + host + '/tugasWSIBW/index.html';
+            var newUri = './tugasWSIBW/index.html'; // Path relatif menuju index.html di folder tugas WISB
             window.location.href = newUri;
         }
     </script>
